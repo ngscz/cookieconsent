@@ -489,7 +489,7 @@
                     if(secondary_btn_data['role'] === 'accept_necessary'){
                         _addEvent(consent_secondary_btn, 'click', function(){
                             _cookieconsent.hide();
-                            _cookieconsent.accept([]); // accept necessary only
+                            _cookieconsent.accept(['analytics']); // accept necessary only
                         });
                     }else{
                         _addEvent(consent_secondary_btn, 'click', function(){
